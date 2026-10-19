@@ -1,0 +1,3 @@
+import './globals.css';import Link from 'next/link';
+export const metadata={title:'Exness Elevate | Partner Leaderboard',description:'Private partner competition leaderboard'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><header><Link href="/"><strong>EXNESS <span style={{color:'#ddb96a'}}>ELEVATE</span></strong></Link><nav><Link href="/">Campaign</Link><Link href="/leaderboard">Leaderboard</Link><Link href="/admin">Admin</Link></nav></header>{children}<div className="footer">EXNESS ELEVATE • Private partner campaign portal • Demo implementation for authorized deployment</div></body></html>}
