@@ -46,4 +46,100 @@
 .el-page .el-select {
   background: #101828 !important;
   color: #ffffff !important;
+}/* GRAND PRIZE: DISPLAY COMPLETE IMAGE */
+.el-page .el-grand-card {
+  width: min(100%, 750px) !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  border-radius: 16px;
+}
+
+.el-page .el-grand-card img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  position: static !important;
+}/* COMPACT RANKING TABLE */
+
+.el-page .el-ranking-table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.el-page .el-ranking-table th:nth-child(1),
+.el-page .el-ranking-table td:nth-child(1) {
+  width: 12%;
+}
+
+.el-page .el-ranking-table th:nth-child(2),
+.el-page .el-ranking-table td:nth-child(2) {
+  width: 27%;
+}
+
+.el-page .el-ranking-table th:nth-child(3),
+.el-page .el-ranking-table td:nth-child(3) {
+  width: 19%;
+}
+
+.el-page .el-ranking-table th:nth-child(4),
+.el-page .el-ranking-table td:nth-child(4) {
+  width: 22%;
+  text-align: right;
+}
+
+.el-page .el-ranking-table th:nth-child(5),
+.el-page .el-ranking-table td:nth-child(5) {
+  width: 20%;
+  text-align: right;
+}
+
+.el-page .el-ranking-table th,
+.el-page .el-ranking-table td {
+  padding: 14px 12px;
+}/* FINAL — BALANCED CENTERED RANKING TABLE */
+
+.el-page .el-ranking-table {
+  width: 100% !important;
+  table-layout: fixed !important;
+  border-collapse: collapse;
+}
+
+/* Column widths */
+.el-page .el-ranking-table th:nth-child(1),
+.el-page .el-ranking-table td:nth-child(1) {
+  width: 18%;
+  text-align: left !important;
+}
+
+.el-page .el-ranking-table th:nth-child(2),
+.el-page .el-ranking-table td:nth-child(2) {
+  width: 20%;
+  text-align: left !important;
+}
+
+.el-page .el-ranking-table th:nth-child(3),
+.el-page .el-ranking-table td:nth-child(3) {
+  width: 18%;
+  text-align: center !important;
+}
+
+.el-page .el-ranking-table th:nth-child(4),
+.el-page .el-ranking-table td:nth-child(4) {
+  width: 24%;
+  text-align: center !important;
+}
+
+.el-page .el-ranking-table th:nth-child(5),
+.el-page .el-ranking-table td:nth-child(5) {
+  width: 20%;
+  text-align: center !important;
+}
+
+.el-page .el-ranking-table th,
+.el-page .el-ranking-table td {
+  padding: 14px 12px !important;
+  vertical-align: middle;
 }

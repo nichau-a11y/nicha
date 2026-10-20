@@ -246,6 +246,15 @@ export default function Leaderboard() {
               <div className="el-section-heading">
                 <div className="el-eyebrow">YOUR POSITION</div>
                 <h2>Full Rankings</h2>
+<p style={{
+  marginTop: '10px',
+  color: '#b8c0ce',
+  fontSize: '14px',
+  fontStyle: 'italic',
+  lineHeight: '1.6'
+}}>
+  *ผลลัพธ์ดังกล่าวยังไม่ถือเป็นที่สิ้นสุด และอยู่ระหว่างรอการตรวจสอบจากฝ่ายที่เกี่ยวข้อง*
+</p>
               </div>
 
               <div className="el-panel">
@@ -285,7 +294,10 @@ export default function Leaderboard() {
                 </div>
 
                 <div className="el-table-scroll">
-                  <table className="el-table">
+                 <table
+  className="el-table el-ranking-table"
+  style={{ tableLayout: 'fixed' }}
+>
                     <thead>
                       <tr>
                         <th>Rank</th>
@@ -385,16 +397,32 @@ export default function Leaderboard() {
             </p>
           </div>
 
-          <div className="el-grand-card">
-            <Image
-              src="/images/grand-prize.png"
-              alt="Grand prize after the campaign — exclusive journey to the Exness office"
-              width={822}
-              height={1034}
-              sizes="(max-width: 768px) 100vw, 480px"
-              className="el-full-image"
-            />
-          </div>
+         <div
+  className="el-grand-card"
+  style={{
+    width: '100%',
+    maxWidth: '822px',
+    margin: '0 auto',
+    overflow: 'visible',
+    borderRadius: '16px'
+  }}
+>
+<Image
+  src="/images/grand-prize.png"
+  alt="Exness Elevate Grand Prize"
+  width={822}
+  height={1034}
+  sizes="(max-width: 768px) 100vw, 750px"
+  unoptimized
+  style={{
+    display: 'block',
+    width: '100%',
+    height: 'auto',
+    objectFit: 'contain',
+    maxWidth: '100%',
+  }}
+/>
+</div>
         </section>
 
         {/* CAMPAIGN RULES */}
